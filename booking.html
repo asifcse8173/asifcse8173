@@ -1,0 +1,40 @@
+<!-- booking.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book a Doctor - MedVisit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Book a Doctor</h2>
+  <form onsubmit="event.preventDefault(); confirmBooking();">
+    <input type="text" id="name" placeholder="Full Name" required><br>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <input type="text" id="phone" placeholder="Phone Number" required><br>
+    <select id="specialization" required>
+      <option value="">Select Doctor Specialization</option>
+      <option>General Physician</option>
+      <option>Cardiologist</option>
+      <option>Pediatrician</option>
+      <option>Orthopedic</option>
+    </select><br>
+    <textarea id="address" placeholder="Your Address" rows="3" required></textarea><br>
+    <button type="submit">Confirm Booking</button>
+  </form>
+  <br>
+  <a href="doctors.html">See Available Doctors</a>
+</div>
+
+<script>
+function confirmBooking() {
+  alert("Booking confirmed! A doctor will visit your home soon.");
+  // After booking you could redirect:
+  window.location.href = 'admin.html';
+}
+</script>
+
+</body>
+</ht
