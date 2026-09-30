@@ -4,7 +4,7 @@
 
 <p align="center">
   <img
-    src="./banner.jpeg"
+    src="./banner.jpg"
     width="100%"
     alt="Mohd Asif - GitHub Profile Banner"
   />
